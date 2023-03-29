@@ -28,6 +28,8 @@ header {
     align-items: center;
     background-color: var(--secundary-color);
     min-height: 10rem;
+    position: fixed;
+    z-index: 100;
 }
 header .imagen-container {
     display: flex;
@@ -77,3 +79,5 @@ nav .header-nav-item a:active {
 nav .header-nav-item a::after {
     content: " | ";
 }
+
+/*Estilos del aside*/

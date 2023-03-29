@@ -1,0 +1,6 @@
+@media (min-width: 600px) {
+    nav .header-nav li:nth-child(2),
+    nav .header-nav li:nth-child(3) {
+        display: inline-block;
+    } 
+}
