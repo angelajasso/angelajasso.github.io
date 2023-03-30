@@ -19,6 +19,18 @@ html {
     --sm: 1.4rem;
     --md: 1.6rem; 
 }
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 100%;
+}
+h1 {
+    color: var(--primary-color);
+    font-size: var(--font);
+    font-weight: bold;
+}
 
 /*Estilos del header*/
 header {
@@ -28,14 +40,6 @@ header {
     align-items: center;
     background-color: var(--secundary-color);
     min-height: 10rem;
-    position: fixed;
-    z-index: 100;
-}
-header .imagen-container {
-    display: flex;
-}
-header .imagen-container img {
-    width: 100%;
 }
 #logo {
     width: 8rem;
@@ -65,7 +69,7 @@ nav .header-nav-item {
 nav .header-nav-item a {
     color: var(--primary-color);
     padding: 0.8rem;
-    border-radius: 2px;
+    border-radius: 0.2rem;
     text-decoration: none;
     font-size: var(--font);
     font-weight: bold;
@@ -81,3 +85,129 @@ nav .header-nav-item a::after {
 }
 
 /*Estilos del aside*/
+aside {
+    display: flex;
+    width: 100%;
+    min-width: 32rem;
+    align-items: center;
+    background-color: var(--three-color);
+    min-height: 24rem;
+    justify-content: center;
+    text-shadow: 0 0 var(--primary-color);
+}
+aside .informacion-container #foto {
+    width: 15rem;
+    position:relative;
+    margin: 1rem auto;
+}
+aside .informacion-container #foto img {
+    border-radius: 100%;
+    width: 100%;
+    border: 0px solid var(--three-color);
+}
+aside .informacion-container .informacion {
+    font-weight: bold;
+    width: 100%;
+    font-size: var(--font);
+    color: var(--primary-color);
+    text-align: center;
+}
+aside .informacion-container .informacion p {
+    text-decoration: overline;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+aside .informacion-container .informacion span {
+    display: inline-block;
+    color: #7389a8;
+    margin-bottom: 1rem;
+}
+aside .informacion {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
+    justify-items: center;
+}
+aside .tech-icons {
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    list-style: none;
+}
+aside .tech-icons li {
+    margin-left: 0.8rem;
+}
+aside .tech-icons .tech-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 100%;
+}
+aside .informacion-sobremi {
+    color: var(--primary-color);
+    font-size: var(--font);
+    text-align: justify;
+    padding: var(--titles) var(--font);
+    width: 100%;
+    text-shadow: 0 0 var(--primary-color);
+}
+aside .informacion-sobremi h3 {
+    margin-bottom: var(--titles);
+}
+aside #nacionalidad, .idioma {
+    display: block;
+    margin: 2rem 1rem 0 0;
+}
+aside .idiomas {
+    margin: 1rem 1rem 0 2rem;
+}
+
+/*Estilos del footer*/
+footer {
+    display: flex;
+    width: 100%;
+    min-width: 32rem;
+    align-items: center;
+    background-color: var(--secundary-color);
+    min-height: 10rem;
+    justify-content: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    list-style: none;
+}
+
+footer .social-icons li {
+    margin-left: 0.8rem;
+}
+footer .social-icons .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+footer .social-icons #linkedin {
+    background: #0077b0;
+}
+
+footer .social-icons #github {
+    background: #23272d;
+}
+
+footer .social-icons #platzi {
+    background: #121f3d;
+}
+
+#linkedin:hover, #github:hover, #platzi:hover {
+    transform: scale(1.5);
+    transition: transform 1s ease-in-out 0.5s;
+}

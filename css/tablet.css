@@ -3,4 +3,22 @@
     nav .header-nav li:nth-child(3) {
         display: inline-block;
     } 
+    aside .informacion-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    aside .informacion-container #foto {
+        flex-basis: 70%;
+        margin: 3rem;
+    }
+
+    aside .informacion-container .informacion {
+        flex-basis: 100%;
+    }
+
+    aside .informacion-container .informacio-sobremi {
+        flex-basis: 40%;
+    }
 }
