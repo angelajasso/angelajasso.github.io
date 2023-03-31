@@ -14,72 +14,86 @@
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 600px)" />
 </head>
 <body>
-    <header>
-        <div class="image-container logo" id="logo">
-            <img src="./img/logoaj.png" alt="logo" />
+    <header class="container header">
+        <div class="image-container" id="logo">
+            <img src="./img/logoaj.png" alt="logo"/>
         </div>
-        <div class="titulo titulo-header">
+        <div class="titulo">
             <h1>Angela Jasso</h1>
         </div>
         <nav>
             <ul class="header-nav">
-                <li class="header-nav-item"><a href="#">Home</a></li>
-                <li class="header-nav-item"><a href="#">Proyectos</a></li>
-                <li class="header-nav-item"><a href="#">Contacto</a></li>
+                <li class="header-nav__item"><a href="">Home</a></li>
+                <li class="header-nav__item"><a href="">Proyectos</a></li>
+                <li class="header-nav__item"><a href="">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <aside>
-        <div class="informacion-container">
-            <div class="image-container" id="foto">
-                <img  src="./img/avatar1.jpg" alt="Foto" title="Avatar"/>
-            </div>
+        <div class="informacion-contenedor">
             <div class="informacion">
-                <h2>Angela Jasso Maldonado</h2>
-                <span>@angelajasso</span>    
-                <p>Front-end Developer</p>
-                <ul class="tech-icons">
-                    <li>
-                        <img src="./img/file_type_html_icon_130541.png" alt="HTML5" class="tech-icon" title="HTML5">
-                    </li>
-                    <li>
-                        <img src="./img/file_type_css_icon_130661.png" alt="CSS3" class="tech-icon" title="CSS3">
-                    </li>
-                    <li>
-                        <img src="./img/javascript_icon_130900.png" alt="JavaScript" class="tech-icon" title="JavaScript">
-                    </li>
-                </ul>
-            </div>
-            <div class="informacion-sobremi">
-                <h3>Sobre mi:</h3>
-                <p>Estudiante de Ciencias de la Informática, creativa, empática, comprometida, sé trabajar en equipo, me interesa el área de Desarrollo de Software, Blockchain y la Ciencia de Datos; soy apasionada por la tecnología, estoy en constante crecimiento y aprendizaje.</p>
-                <span id="nacionalidad">Nacionalidad Mexicana 🇲🇽</span>
-                <span class="idioma">Idiomas:</span>
-                <ul class="idiomas">
-                    <li id="ingles">Inglés Nivel A2 en el Marco Común Europeo.</li>  
-                </ul>
+                <h2 class="welcome">Hola, Soy Angela Jasso</h2>
+                <h2 class="porta">Desarrollador de Interfaz de Usuario</h2>
+                <p class="description">Hola, Mi nombre es Angela Jasso Maldonado, soy Desarrollador de Interfaz de Usuario y Entusiasta de la Tecnología. En esta Página Web te cuento un poco sobre mi y te muestro algunos proyectos que he realizado. </p>
+                <div class="controls">
+                    <button class="cv curriculum">Curriculum Vitae</button>
+                    <button class="contacto_inicio">@angelajasso</button>
+                </div>
             </div>
         </div>
     </aside>
-    <main></main>
+    <main>
+        <div class="skills">
+            <h3 class="titulo_skills">SKILLS:</h3>
+            <ul class="tech-icons">
+                <li>
+                    <figure>
+                        <img src="./img/file_type_html_icon_130541.png" alt="HTML5" class="tech-icon">
+                        <figcaption>HTML</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./img/file_type_css_icon_130661.png" alt="CSS3" class="tech-icon">
+                        <figcaption>CSS</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./img/javascript_icon_130900.png" alt="JavaScript" class="tech-icon" id="js">
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <div class="informacion-sobremi">
+            <h3>Sobre mi:</h3>
+            <p>Estudiante de Ciencias de la Informática, creativa, empática, comprometida, sé trabajar en equipo, me interesa el área de Desarrollo de Software, Blockchain y la Ciencia de Datos; soy apasionada por la tecnología, estoy en constante crecimiento y aprendizaje.</p>
+            <span id="nacionalidad">Nacionalidad Mexicana 🇲🇽</span>
+            <span class="idioma">Idiomas:</span>
+            <ul class="idiomas">
+                <li id="ingles">Inglés Nivel A2 en el Marco Común Europeo.</li>  
+            </ul>
+        </div>
+    </main>
     <footer>
         <ul class="social-icons">
             <li>
                 <a href="https://www.linkedin.com/in/angelajasso/" target="_blank" class="social-icon" id="linkedin">
-                    <img src="./img/linkedin.png" alt="linkedin" title="linkedin">
+                    <img src="./img/linkedin.png" alt="linkedin">
                 </a>
             </li>
             <li>
                 <a href="https://github.com/angelajasso" target="_blank" class="social-icon" id="github">
-                    <img src="./img/github.png" alt="github" title="github">
+                    <img src="./img/github.png" alt="github">
                 </a>
             </li>
             <li>
                 <a href="https://platzi.com/p/angelajasso/" class="social-icon" target="_blank" id="platzi">
-                    <img src="./img/platzi.png" alt="platzi" title="platzi">
+                    <img src="./img/platzi.png" alt="platzi">
                 </a>
             </li>
         </ul>
-    </footer>
+    </footer> 
 </body>
 </html>
