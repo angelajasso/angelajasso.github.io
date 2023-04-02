@@ -28,6 +28,7 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     min-height: 10rem;
+
 }
 .image-container {
     display: flex;
@@ -45,7 +46,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 2.4rem;
+    padding: 0 1.4rem;
 }
 h1 {
     color: var(--font-color);
@@ -159,6 +160,9 @@ aside .controls {
     font-weight: bold;
 }
 /* Aqui van los estilos del main*/
+main {
+    background-color: var(--three-color);
+}
 main .skills {
     background-color: var(--three-color);
     width: 100%;
