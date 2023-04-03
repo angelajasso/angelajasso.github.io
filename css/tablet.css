@@ -6,14 +6,22 @@
     nav .header-nav li:nth-child(3) {
         display: inline-block;
     } 
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+    }
     aside .informacion-contenedor {
-        width: 60%;
+        width: 50%;
         margin: 0 2.4rem ;
         display: flex;
         flex-wrap: nowrap;
     }
     aside .contenedor-pantalla-flor {
-        margin-left: 5rem;
+        display: flex;
+        width: 40%;
+    }
+    aside .pantalla-flor {
+        margin: 0;
     }
     main {
         display: flex;

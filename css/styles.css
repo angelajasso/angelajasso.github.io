@@ -177,17 +177,14 @@ aside .contenedor-pantalla-flor {
 }
 .pantalla {
     width: 28rem;
-    height: 44rem;
+    height: 36rem;
     position: absolute;
+    margin-top: 2rem;
 }
 .flor {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
-}
-.flor img:hover {
-    transform: rotate(360deg);
-    transition: 1s ease-in-out;
 }
 /* Aqui van los estilos del main*/
 main {
