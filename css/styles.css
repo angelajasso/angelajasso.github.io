@@ -8,6 +8,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 } 
 :root {
     --primary-color: #2B3A55;
@@ -19,6 +20,9 @@ html {
     --titles: 2.8rem;  
     --sm: 1.4rem;
     --md: 1.6rem; 
+}
+section[id] {
+    scroll-margin-top: 70px;
 }
 /* Aqui van los estilos del header*/
 header {
