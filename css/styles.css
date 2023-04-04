@@ -110,6 +110,10 @@ aside {
     flex-direction: column;
     align-items: center;
 }
+aside .controls .contacto_inicio a {
+    text-decoration: none;
+    color: var(--secundary-color);
+}
 aside .informacion-contenedor {
     width: 100%;
     min-width: 28rem;
