@@ -9,6 +9,7 @@
     aside {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
     aside .informacion-contenedor {
         width: 50%;
@@ -20,8 +21,10 @@
         display: flex;
         width: 40%;
     }
-    aside .pantalla-flor {
-        margin: 0;
+    aside .pantalla {
+        width: 18rem;
+        height: 32rem;
+        position: absolute;
     }
     main {
         display: flex;

@@ -103,14 +103,17 @@ nav {
 aside {
     background-color: var(--primary-color);
     min-height: 24rem;
+    display: flex;
     justify-content: center;
     padding: 16rem 2rem 8rem 2rem;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 aside .informacion-contenedor {
     width: 100%;
     min-width: 28rem;
-    align-items: center;
+    padding: 0 1rem;
 }
 aside .informacion {
     color: var(--font-color);
@@ -168,27 +171,29 @@ aside .contenedor-pantalla-flor {
     align-items: center;
     min-height: 6rem;
     justify-content: center;
-
-}
-.pantalla-flor {
-    width: 30rem;
+    width: 28rem;
     height: 40rem;
     margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     margin-top: 3rem;
 }
 .pantalla {
     width: 28rem;
     height: 36rem;
     position: absolute;
-    margin-top: 2rem;
 }
 .flor {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     display: flex;
+    animation: flor-girando 10s infinite linear;
+}
+@keyframes flor-girando {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 /* Aqui van los estilos del main*/
 main {

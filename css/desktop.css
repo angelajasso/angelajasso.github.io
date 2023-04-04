@@ -1,2 +1,35 @@
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    aside .informacion-contenedor {
+        width: 50%;
+        margin: 0 2.4rem ;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    aside .contenedor-pantalla-flor {
+        display: flex;
+        align-items: center;
+        min-height: 6rem;
+        justify-content: center;
+        width: 28rem;
+        height: 40rem;
+        margin: 0;
+        margin-top: 3rem;
+        width: 40%;
+    }
+    aside .pantalla {
+        width: 28rem;
+        height: 36rem;
+        position: absolute;
+        margin: 0;
+    }
+    .flor {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        animation: flor-girando 10s infinite linear;
+    }
 }
