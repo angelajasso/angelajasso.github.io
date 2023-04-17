@@ -1,4 +1,4 @@
-# My Personal Website
+# My Personal Website [Angela Jasso](https://angelajasso.github.io)
 Welcome to my personal website! I'm Angela Jasso, and here you can find information about me and my most recent projects.
 
 ## About me
@@ -6,7 +6,7 @@ I'm a web developer who works on designing and developing custom websites. I'm p
 
 ## How to contact me
 
-If you have any questions, feel free to contact me. You can reach me on LinkedIn and GitHub as **@angelajasso**.
+If you have any questions, feel free to contact me. You can reach me on [LinkedIn](https://www.linkedin.com/in/angelajasso) and [GitHub](https://github.com/angelajasso) as **@angelajasso**.
 
 ## Technologies
 
