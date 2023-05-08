@@ -1,4 +1,32 @@
 @media (min-width: 800px) {
+    h1 {
+        color: var(--font-color);
+        font-size: var(--font);
+        font-weight: bold;
+    }
+    nav {
+        display: block;
+        background: var(--primary-color);
+        text-align-last: right;
+        margin-inline-start: auto;
+    }
+    .header-nav__item a {
+        color: var(--font-color);
+        padding: 0.8rem;
+        border-radius: 2px;
+        text-decoration: none;
+        font-size: var(--font);
+        font-weight: bold;
+    }
+    .header-nav__item a:hover {
+        color: var(--font-color);
+    }
+    .header-nav__item a:active {
+        color: var(--four-color);
+    }
+    .header-nav__item a::after {
+        content: " | ";
+    }
     aside {
         display: flex;
         flex-wrap: wrap;

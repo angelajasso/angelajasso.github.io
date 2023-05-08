@@ -27,10 +27,11 @@ section[id] {
 /* Aqui van los estilos del header*/
 header {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     min-width: 32rem;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--secundary-color);
     min-height: 10rem;
 
 }
@@ -44,6 +45,7 @@ header {
 .image-container img {
     width: 100%;
 }
+
 .header {
     z-index: 10000;
     position: fixed;
@@ -53,9 +55,7 @@ header {
     padding: 0 1.4rem;
 }
 h1 {
-    color: var(--font-color);
-    font-size: var(--font);
-    font-weight: bold;
+    display: none;
 }
 #logo {
     width: 8rem;
@@ -67,41 +67,11 @@ h1 {
     border: 0px solid var(--primary-color);
 }
 nav {
-    display: block;
-    background: var(--primary-color);
-    text-align-last: right;
-    margin-inline-start: auto;
-}
-.header-nav li:nth-child(2), .header-nav li:nth-child(3){
     display: none;
-}
-.header-nav {
-    list-style: none;
-    padding-left: 0;
-}
-.header-nav__item {
-    display: inline-block;
-}
-.header-nav__item a {
-    color: var(--font-color);
-    padding: 0.8rem;
-    border-radius: 2px;
-    text-decoration: none;
-    font-size: var(--font);
-    font-weight: bold;
-}
-.header-nav__item a:hover {
-    color: var(--font-color);
-}
-.header-nav__item a:active {
-    color: var(--four-color);
-}
-.header-nav__item a::after {
-    content: " | ";
 }
 /* Aqui van los estilos del aside*/
 aside {
-    background-color: var(--primary-color);
+    background-color: var(--three-color);
     min-height: 24rem;
     display: flex;
     justify-content: center;
@@ -120,7 +90,7 @@ aside .informacion-contenedor {
     padding: 0 1rem;
 }
 aside .informacion {
-    color: var(--font-color);
+    color: var(--primary-color);
 }
 aside .welcome, aside .porta {
     text-align: center;
@@ -128,7 +98,7 @@ aside .welcome, aside .porta {
     padding-bottom: var(--sm);
     line-height: 4.4rem;
 }
-aside .porta {
+aside .welcome {
     color: var(--secundary-color);
 }
 aside .description {
