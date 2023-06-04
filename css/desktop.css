@@ -32,25 +32,16 @@
         width: 50%;
     }
     aside .pantalla {
-        width: 18rem;
-        height: 27rem;
-        position: absolute;
-    }
-    aside .pantalla img {
-        display: flex;
-        justify-content: flex-end;
-        width: 20rem;
-        height: 24rem;
-        left: 42rem;
+        display: none;
     }
     .flor {
-        width: 74%;
-        height: 20rem;
+        width: 80%;
+        height: 24rem;
         position: absolute;
     }
     aside .flor img {
-        width: 16rem;
-        height: 16rem;
+        width: 24rem;
+        height: 24rem;
         animation: flor-girando 10s infinite linear;
     }
     @keyframes flor-girando{from {transform: rotate(0deg);}
