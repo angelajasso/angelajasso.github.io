@@ -1,63 +1,72 @@
 @media (min-width: 800px) {
-    h1 {
-        color: var(--font-color);
-        font-size: var(--font);
-        font-weight: bold;
+    /*Header styles*/
+    .header {
+        padding: 0 6rem;
+        list-style: none;
+    }
+    header .mode-nav {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    header .moon_mode {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        align-items: center
+    }
+    header .menu-nav-icon{
+        display: none;
+    }
+    header .sun_mode {
+        display: none;
     }
     nav {
-        display: block;
-        background: var(--primary-color);
-        text-align-last: right;
-        margin-inline-start: auto;
+        display: inline-block;
     }
-    .header-nav__item a {
-        color: var(--font-color);
-        padding: 0.8rem;
-        border-radius: 2px;
-        text-decoration: none;
-        font-size: var(--font);
-        font-weight: bold;
-    }
-    .header-nav__item a:hover {
-        color: var(--font-color);
-    }
-    .header-nav__item a:active {
-        color: var(--four-color);
-    }
-    .header-nav__item a::after {
-        content: " | ";
-    }
+    /*Aside styles*/
     aside {
-        display: flex;
-        flex-wrap: wrap;
+        padding: 12rem 6rem 6rem 6rem;
     }
     aside .informacion-contenedor {
         width: 50%;
-        margin: 0 2.4rem ;
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    aside .contenedor-pantalla-flor {
-        display: flex;
-        align-items: center;
-        min-height: 6rem;
-        justify-content: center;
-        width: 28rem;
-        height: 40rem;
-        margin: 0;
-        margin-top: 3rem;
-        width: 40%;
     }
     aside .pantalla {
-        width: 28rem;
-        height: 36rem;
+        width: 18rem;
+        height: 27rem;
         position: absolute;
-        margin: 0;
+    }
+    aside .pantalla img {
+        display: flex;
+        justify-content: flex-end;
+        width: 20rem;
+        height: 24rem;
+        left: 42rem;
     }
     .flor {
-        width: 120px;
-        height: 120px;
-        display: flex;
+        width: 74%;
+        height: 20rem;
+        position: absolute;
+    }
+    aside .flor img {
+        width: 16rem;
+        height: 16rem;
         animation: flor-girando 10s infinite linear;
     }
-}
+    @keyframes flor-girando{from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}}
+    @keyframes flor-girando {from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}}
+    /*main styles*/
+    main {
+        padding: 0 6rem;
+    }
+    main .container-photo {
+        width: 50%;
+        float: left;
+    }
+    .informacion-sobremi {
+        width: 50%;
+        float: left;
+    }
+    }

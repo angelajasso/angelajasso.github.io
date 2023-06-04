@@ -1,45 +1,69 @@
 @media (min-width: 600px) {
+    /*Header styles*/
     .header {
-        padding: 0 3.4rem;
+        padding: 0 4rem;
     }
-    nav .header-nav li:nth-child(2),
-    nav .header-nav li:nth-child(3) {
-        display: inline-block;
-    } 
-    aside {
+    header h1 {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        justify-content: flex-start;
+        color: var(--secondary-color);
     }
-    aside .informacion-contenedor {
-        width: 50%;
-        margin: 0 2.4rem ;
+    #logo {
+        width: 5rem;
+    }
+    
+    #logo img {
+        width: 100%;
+        border-radius: 100%;
+        border: 0px solid var(--three-color);
+    }
+    header .moon_mode {
+        width: 5rem;
+        height: 5rem;
         display: flex;
-        flex-wrap: nowrap;
+        align-items: center
     }
-    aside .contenedor-pantalla-flor {
+    header .logo-complete {
         display: flex;
-        width: 40%;
-    }
-    aside .pantalla {
-        width: 18rem;
-        height: 32rem;
-        position: absolute;
-    }
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    main .container-photo {
-        display: flex;
-        justify-content: center;
-        width: 40%;
-    }
-    main .informacion-sobremi {
-        width: 60%;
-        padding: 3rem 4rem 5rem;
-        display: flex;
-        flex-direction: column;
+        justify-content: left;
         align-items: center;
     }
-}
+    /*Aside styles*/
+    aside {
+        padding: 12rem 4rem 6rem 4rem;
+    }
+    aside .welcome, aside .porta {
+        font-size: 3.2rem;
+    }
+    aside .description {
+        text-align: center;
+        font-size: 2rem;
+    }
+    aside .pantalla {
+        width: 12rem;
+        height: 12rem;
+    }
+    aside .flor img {
+        width: 12rem;
+        height: 12rem;
+    }
+    /*main styles*/
+    main {
+        padding: 0 4rem;
+    }
+    main .container-photo img {
+        width: 18rem;
+    }
+    .informacion-sobremi {
+        font-size: 2rem;
+    }
+    main .skills h3 {
+        font-size: 2.2rem;
+    }
+    main .tech-icons li {
+        margin-left: 1.2rem;
+    }
+    main .tech-icons .tech-icon {
+        width: 4rem;
+    }
+    }

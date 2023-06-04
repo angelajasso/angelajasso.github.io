@@ -1,4 +1,4 @@
-/*Estilos GEnerales*/
+/*General styles*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,35 +11,33 @@ html {
     scroll-behavior: smooth;
 } 
 :root {
-    --primary-color: #2B3A55;
-    --secundary-color: #ce7777;
-    --three-color: #F2E5E5;
-    --four-color: #e8c4c4;
-    --font-color: #ffffff;
+    --primary-color: #F2E5E5;
+    --secondary-color: #2B3A55;
+    --three-color: #E8C4C4;
+    --four-color: #CE7777;
+    --black-color: #10151F;
+    --white-color:#FFF2F2;
     --font: 1.8rem;
-    --titles: 2.8rem;  
+    --titles: 3rem;  
     --sm: 1.4rem;
     --md: 1.6rem; 
 }
-section[id] {
-    scroll-margin-top: 70px;
-}
-/* Aqui van los estilos del header*/
+/*Header styles*/
 header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-width: 32rem;
     align-items: center;
-    background-color: var(--secundary-color);
-    min-height: 10rem;
+    background-color: var(--three-color);
+    min-height: 6rem;
 
 }
 .image-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 6.4rem;
+    min-height: 6rem;
 }
 
 .image-container img {
@@ -52,45 +50,80 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 1.4rem;
+    padding: 0 2rem;
 }
 h1 {
     display: none;
 }
 #logo {
-    width: 8rem;
+    width: 5rem;
 }
 
 #logo img {
     width: 100%;
     border-radius: 100%;
-    border: 0px solid var(--primary-color);
+    border: 0px solid var(--three-color);
+}
+header .mode-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header .moon_mode {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center
+}
+header .sun_mode {
+    display: none;
 }
 nav {
     display: none;
+    text-align-last: right;
+    margin-inline-start: auto;
+    list-style: none;
+   
 }
-/* Aqui van los estilos del aside*/
+.header-nav__item {
+    display: inline-block;
+    margin: 0.5rem;
+    position: relative;
+}
+.header-nav__item a {
+    color: var(--secondary-color);
+    padding: 0.8rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: var(--font);
+    font-weight: bold;
+}
+.header-nav__item a:hover {
+    color: var(--font-color);
+}
+.header-nav__item a:active {
+    color: var(--four-color);
+}
+.header-nav__item a::after {
+    content: " | ";
+}
+
+/*Aside styles*/
 aside {
-    background-color: var(--three-color);
+    background-color: var(--white-color);
     min-height: 24rem;
     display: flex;
     justify-content: center;
-    padding: 16rem 2rem 8rem 2rem;
+    padding: 12rem 2rem 6rem 2rem;
     width: 100%;
     flex-direction: column;
-    align-items: center;
-}
-aside .controls .contacto_inicio a {
-    text-decoration: none;
-    color: var(--secundary-color);
 }
 aside .informacion-contenedor {
     width: 100%;
     min-width: 28rem;
-    padding: 0 1rem;
 }
 aside .informacion {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 aside .welcome, aside .porta {
     text-align: center;
@@ -99,7 +132,7 @@ aside .welcome, aside .porta {
     line-height: 4.4rem;
 }
 aside .welcome {
-    color: var(--secundary-color);
+    color: var(--four-color);
 }
 aside .description {
     padding-bottom: 1.6rem;
@@ -107,90 +140,61 @@ aside .description {
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
-aside .controls {
+aside .pantalla {
+    width: 8rem;
+    height: 8rem;
+}
+aside .flor {
     display: flex;
-    grid-gap: 1.6rem;
-    gap: 1.6rem;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 }
-.cv {
-    display: block;
-    margin-bottom:1rem;
-    background-color: var(--secundary-color);
-    border-radius: 4rem;
-    border: none;
-    color: var(--primary-color);
-    width: 15rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 1.2rem 2.4rem;
-    font-weight: bold;
+aside .flor img {
+    width: 8rem;
+    height: 8rem;
 }
-.contacto_inicio {
-    display: block;
-    margin-bottom:1rem;
-    background-color: var(--primary-color);
-    border-radius: 4rem;
-    border: 0.1rem solid var(--secundary-color);
-    color: var(--secundary-color);
-    width: 15rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 1.2rem 2.4rem;
-    font-weight: bold;
+/*main styles*/
+main {
+    background-color: var(--white-color);
+    padding: 0 2rem;
 }
-aside .contenedor-pantalla-flor {
+main .container-photo {
     display: flex;
     align-items: center;
     min-height: 6rem;
     justify-content: center;
-    width: 28rem;
-    height: 40rem;
-    margin: 0;
-    margin-top: 3rem;
+
 }
-.pantalla {
-    width: 28rem;
-    height: 36rem;
-    position: absolute;
+main .container-photo img {
+    width: 100%;
+    border-radius: 100%;
+    border: 0px solid var(--primary-color);
+    width: 14rem;
 }
-.flor {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    animation: flor-girando 10s infinite linear;
+.informacion-sobremi {
+    color: var(--secondary-color);
+    font-size: var(--font);
+    text-align: justify;
+    width: 100%;
 }
-@keyframes flor-girando {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-}
-/* Aqui van los estilos del main*/
-main {
-    background-color: var(--three-color);
+.informacion-sobremi h3 {
+    margin-bottom: var(--font);
 }
 main .skills {
-    background-color: var(--three-color);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6rem 0;
 }
 main .skills h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: var(--font);
-    font-weight: bold;
-    text-shadow: 0 0 var(--primary-color);
 }
 main .skills figcaption {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
 }
 main #js {
@@ -213,48 +217,15 @@ main .tech-icons .tech-icon {
     width: 3rem;
     height: 100%;
 }
-main .container-photo {
-    display: flex;
-    align-items: center;
-    min-height: 6rem;
-    justify-content: center;
-
-}
-main .container-photo img {
-    width: 100%;
-    border-radius: 100%;
-    border: 0px solid var(--primary-color);
-    width: 20rem;
-}
-.informacion-sobremi {
-    background-color: var(--three-color);
-    color: var(--primary-color);
-    font-size: var(--font);
-    text-align: justify;
-    padding: var(--titles) var(--font);
-    width: 100%;
-    text-shadow: 0 0 var(--primary-color);
-}
-.informacion-sobremi h3 {
-    margin-bottom: var(--titles);
-}
-#nacionalidad, .idioma {
-    display: block;
-    margin: 2rem 1rem 0 0;
-}
-
-.idiomas {
-    margin: 1rem 1rem 0 2rem;
-}
-/* Aqui van los estilos del footer*/
+/* footer styles*/
 footer {
     justify-content: center;
     display: flex;
     width: 100%;
     min-width: 32rem;
     align-items: center;
-    background-color: var(--primary-color);
-    min-height: 10rem;
+    background-color: var(--three-color);
+    min-height: 6rem;
 }
 
 footer .social-icons {
@@ -271,7 +242,7 @@ footer .social-icons .social-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
