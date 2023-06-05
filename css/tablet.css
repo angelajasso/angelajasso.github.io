@@ -17,12 +17,6 @@
         border-radius: 100%;
         border: 0px solid var(--three-color);
     }
-    header .moon_mode {
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        align-items: center
-    }
     header .logo-complete {
         display: flex;
         justify-content: left;

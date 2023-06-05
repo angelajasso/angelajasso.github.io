@@ -10,13 +10,25 @@ html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 } 
-:root {
+
+[data-theme="light"] {
     --primary-color: #F2E5E5;
     --secondary-color: #2B3A55;
     --three-color: #E8C4C4;
     --four-color: #CE7777;
-    --black-color: #10151F;
-    --white-color:#FFF2F2;
+    --five-color: #10151F;
+    --six-color:#FFF2F2;
+}
+
+[data-theme="dark"] {
+    --primary-color: #F2E5E5;
+    --secondary-color: #FFF2F2;
+    --three-color: #2B3A55;
+    --four-color: #CE7777;
+    --five-color: #E8C4C4;
+    --six-color: #10151F;
+}
+:root {
     --font: 1.8rem;
     --titles: 3rem;  
     --sm: 1.4rem;
@@ -69,15 +81,6 @@ header .mode-nav {
     justify-content: end;
     align-items: center;
 }
-header .moon_mode {
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    align-items: center
-}
-header .sun_mode {
-    display: none;
-}
 nav {
     display: none;
     text-align-last: right;
@@ -107,10 +110,59 @@ nav {
 .header-nav__item a::after {
     content: " | ";
 }
+/* Estilos del switch */
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--four-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider {
+    background-color: var(--four-color);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
 /*Aside styles*/
 aside {
-    background-color: var(--white-color);
+    background-color: var(--six-color);
     min-height: 24rem;
     display: flex;
     justify-content: center;
@@ -154,7 +206,7 @@ aside .flor img {
 }
 /*main styles*/
 main {
-    background-color: var(--white-color);
+    background-color: var(--six-color);
     padding: 0 2rem;
 }
 main .container-photo {

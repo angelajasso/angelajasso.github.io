@@ -9,16 +9,7 @@
         justify-content: end;
         align-items: center;
     }
-    header .moon_mode {
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        align-items: center
-    }
     header .menu-nav-icon{
-        display: none;
-    }
-    header .sun_mode {
         display: none;
     }
     nav {
