@@ -10,6 +10,9 @@ html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 } 
+body {
+    background-color: var(--six-color);
+}
 
 [data-theme="light"] {
     --primary-color: #F2E5E5;
@@ -69,6 +72,7 @@ h1 {
 }
 #logo {
     width: 5rem;
+    margin: 0 1rem 0 0;
 }
 
 #logo img {
@@ -80,6 +84,11 @@ header .mode-nav {
     display: flex;
     justify-content: end;
     align-items: center;
+}
+header svg {
+    fill: var(--three-color);
+    stroke: var(--secondary-color);
+    margin: 0 0 0 1rem;
 }
 nav {
     display: none;
