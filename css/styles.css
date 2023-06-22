@@ -13,6 +13,9 @@ html {
 body {
     background-color: var(--six-color);
 }
+h3 {
+    font-size: 2.6rem;
+}
 
 [data-theme="light"] {
     --primary-color: #F2E5E5;
@@ -277,6 +280,18 @@ main .tech-icons .tech-icon {
     border-radius: 0.5rem;
     width: 3rem;
     height: 100%;
+}
+main .projects h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--font);
+    display: flex;
+    justify-content: center;
+}
+main .projects p {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    text-align: justify;
+    margin-bottom: var(--font);
 }
 /* footer styles*/
 footer {
