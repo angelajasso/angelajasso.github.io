@@ -288,6 +288,7 @@ main .projects h3 {
     justify-content: center;
 }
 main .projects p {
+    display: none;
     color: var(--secondary-color);
     font-size: 2rem;
     text-align: justify;
