@@ -8,7 +8,7 @@
 }
 
 * {
-  --t: 95%;
+  /* --t: 95%; */
   --primary-color: hsl(233, 37%, var(--l));
   --secundary-color: hsl(169, 80%, 52%);
   --accent-color: hsl(0, 100%, 71%);
@@ -21,9 +21,10 @@
 /* header */
 header {
   --l: 25%;
+  --t: 95%;
   width: 100%;
   height: 5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -69,3 +70,53 @@ nav li:active {
 
 /* main */
 /* hero */
+main {
+  --t: 17%;
+  container: hero / inline-size;
+  max-width: 1400px;
+}
+
+.hero {
+  display: grid;
+  margin: 2rem;
+  text-align: center;
+}
+
+.title {
+  margin: 1rem;
+  align-content: center;
+}
+
+.title h1 {
+  font-size: max(2.4em, 2.4em + 3.4cqi);
+}
+
+.title p {
+  font-size: max(1em, 1em + 2cqi);
+  margin-top: 1rem;
+}
+
+.photo {
+  align-content: center;
+}
+
+.photo img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+@container hero (min-width: 700px) {
+  .hero {
+    grid-template-columns: 2fr 1fr;
+    margin-right: 4rem;
+    text-align: start;
+  }
+
+  .photo img {
+    width: 100%;
+  }
+
+  .title {
+    padding-right: 5rem;
+  }
+}
