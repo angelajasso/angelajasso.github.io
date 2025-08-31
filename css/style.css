@@ -105,6 +105,22 @@ main {
   border-radius: 20px;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border: 1px solid blue;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin: 2rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 @container hero (min-width: 700px) {
   .hero {
     grid-template-columns: 2fr 1fr;
@@ -118,5 +134,11 @@ main {
 
   .title {
     padding-right: 5rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
   }
 }
