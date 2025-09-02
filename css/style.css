@@ -196,6 +196,31 @@ main {
   justify-content: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  text-decoration: 1px solid underline transparent;
+}
+
 @container hero (min-width: 700px) {
   .hero {
     grid-template-columns: 2fr 1fr;
@@ -245,5 +270,18 @@ main {
 
   .cta {
     grid-area: cta;
+  }
+}
+
+@media (min-width: 700px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem 5rem;
+  }
+
+  .group {
+    flex-direction: row;
+    gap: 3rem;
   }
 }
