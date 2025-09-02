@@ -121,10 +121,14 @@ main {
   gap: 0.5rem;
 }
 
+.work {
+  display: grid;
+  gap: 2rem;
+}
+
 .header-work {
   justify-self: center;
   text-align: center;
-  margin: 1.5rem;
 }
 
 .header-work h3 {
@@ -142,7 +146,6 @@ main {
   gap: 2rem;
   list-style: none;
   padding-inline: 1.5rem;
-  margin-top: 2rem;
   text-decoration: none;
 }
 
@@ -212,5 +215,35 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+  }
+
+  .work {
+    display: grid;
+    grid-template-areas:
+      "header-work header-work header-work cta"
+      "gallery gallery gallery gallery";
+    margin: 1.6rem;
+  }
+
+  .header-work {
+    grid-area: header-work;
+  }
+
+  .gallery {
+    grid-area: gallery;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .grid > *:nth-child(1),
+  .grid > *:nth-child(3) {
+    margin-top: 7.5rem;
+  }
+
+  .cta {
+    grid-area: cta;
   }
 }
