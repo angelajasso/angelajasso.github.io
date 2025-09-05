@@ -252,20 +252,21 @@ footer {
 
   .header-work {
     grid-area: header-work;
+    justify-self: flex-start;
+    text-align: left;
   }
 
   .gallery {
     grid-area: gallery;
   }
 
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+  .card {
+    height: 22rem;
   }
 
-  .grid > *:nth-child(1),
-  .grid > *:nth-child(3) {
-    margin-top: 7.5rem;
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
 
   .cta {
