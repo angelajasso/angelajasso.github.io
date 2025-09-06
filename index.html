@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,26 +13,43 @@
         <img src="./assets/Logo.svg" alt="logo" />
         <p>Angela Jasso</p>
       </section>
-      <nav>
-        <ul>
-          <li>
-            <a href="#arriba">Home</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#about">about</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="social_toggle">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <div></div>
-      </section>
+      <div class="btn">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776</button>
+      </div>
+      <div class="menu-content">
+        <nav>
+          <ul>
+            <li>
+              <a href="#arriba">Inicio</a>
+            </li>
+            <li>
+              <a href="#work">Proyectos</a>
+            </li>
+            <li>
+              <a href="#about">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="social-toggle">
+          <img src="./assets/github.svg" alt="GitHub" />
+        <img src="./assets/instagram.svg" alt="Instagram" />
+        <img src="./assets/linkedin.svg" alt="LinkedIn" />
+          <button class="toggle" onclick="toggleDark()">🌙</button>
+        </section>
+      </div>
     </header>
+
+    <div class="menu" id="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Proyectos</a>
+      <a href="#">Contacto</a>
+      <section class="socials">
+        <img src="./assets/github.svg" alt="GitHub" />
+        <img src="./assets/instagram.svg" alt="Instagram" />
+        <img src="./assets/linkedin.svg" alt="LinkedIn" />
+        <button class="toggle" onclick="toggleDark()">🌙</button>
+      </section>
+    </div>
     <main>
       <section class="hero">
         <div class="title">
@@ -118,5 +135,6 @@
         <a href="">Instagram</a>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
