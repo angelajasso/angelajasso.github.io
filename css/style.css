@@ -7,26 +7,35 @@
   padding: 0;
 }
 
-* {
-  /* --t: 95%; */
-  --primary-color: hsl(233, 37%, var(--l));
-  --secundary-color: hsl(169, 80%, 52%);
-  --accent-color: hsl(0, 100%, 71%);
-  --color-text: hsl(233, 37%, var(--t));
+/* Colores base */
+:root {
+  --color-bg: hsl(75, 6%, 87%);
+  --color-secundary: hsl(214, 23%, 56%);
+  --color-accent: hsl(212, 29%, 36%);
+  --color-text: hsl(219, 37%, 17%);
+  --other-color: hsl(210, 54%, 11%);
+}
 
-  background-color: var(--primary-color);
+/* modo oscuro */
+.dark {
+  --color-bg: hsl(219, 37%, 17%);
+  --color-text: hsl(75, 6%, 87%);
+}
+
+body {
+  background-color: var(--color-bg);
   color: var(--color-text);
 }
 
 /* header */
 header {
-  --l: 25%;
-  --t: 95%;
   width: 100%;
   padding: 1rem 2.5rem;
   justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  color: hsl(75, 6%, 87%);
+  background-color: var(--other-color);
 }
 
 .logotipo {
@@ -60,11 +69,12 @@ nav li {
 
 nav a {
   text-decoration: none;
+  color: hsl(75, 6%, 87%);
 }
 
 nav li:hover,
 nav li:active {
-  --l: 17%;
+  background-color: var(--color-accent);
 }
 
 .btn {
@@ -80,6 +90,8 @@ nav li:active {
   border-radius: 50%;
   padding: 0.5rem;
   align-items: center;
+  background-color: var(--other-color);
+  color: hsl(75, 6%, 87%);
 }
 
 .social-toggle {
@@ -90,7 +102,7 @@ nav li:active {
   margin-left: 1rem;
   cursor: pointer;
   background: none;
-  border: 1px solid currentColor;
+  border: 1px solid hsl(75, 6%, 87%);
   border-radius: 50%;
   padding: 0.4rem;
   font-size: 1rem;
@@ -107,6 +119,8 @@ nav li:active {
 
 .menu a {
   margin: 0.5rem 0;
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 .menu.show {
@@ -154,7 +168,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  border: 1px solid var(--accent-color);
+  border: 3px solid var(--color-text);
   border-radius: 0.75rem;
   padding: 1.5rem;
   margin: 2rem;
