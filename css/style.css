@@ -146,19 +146,19 @@ nav li:active {
 /* main */
 /* hero */
 main {
-  --t: 17%;
   container: hero / inline-size;
   max-width: 1400px;
+  margin: 2rem 0;
 }
 
 .hero {
   display: grid;
-  margin: 2rem;
+  margin: 2.5rem;
   text-align: center;
 }
 
 .title {
-  margin: 1rem;
+  margin: 0.5rem;
   align-content: center;
 }
 
@@ -187,7 +187,7 @@ main {
   border: 3px solid var(--color-text);
   border-radius: 0.75rem;
   padding: 1.5rem;
-  margin: 2rem;
+  margin: 2.5rem;
 }
 
 .stack {
@@ -204,6 +204,7 @@ main {
 .header-work {
   justify-self: center;
   text-align: center;
+  margin: 0 0.8rem;
 }
 
 .header-work h3 {
@@ -220,7 +221,7 @@ main {
   grid-auto-rows: 1fr;
   gap: 2rem;
   list-style: none;
-  padding-inline: 1.5rem;
+  padding-inline: 0.8rem;
   text-decoration: none;
 }
 
@@ -261,13 +262,14 @@ main {
   position: relative;
   display: flex;
   text-align: center;
-  padding: 0.56rem 2rem;
+  padding: 1rem 3rem;
   gap: 0.8rem;
   text-decoration: none;
   border-radius: 50rem;
   overflow: hidden;
-  background-color: var(--accent-color);
-  margin: 1.5rem;
+  background-color: var(--color-accent);
+  color: white;
+  margin: 1rem;
   justify-content: center;
 }
 
@@ -277,6 +279,7 @@ footer {
   text-align: center;
   gap: 1.5rem;
   padding: 3rem 2rem;
+  border-top: 2px solid var(--color-text);
 }
 
 .group {
@@ -293,7 +296,16 @@ footer {
 }
 
 .socials a {
-  text-decoration: 1px solid underline transparent;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.about {
+  margin: 2.5rem;
+}
+
+.about p {
+  margin: 1rem 0;
 }
 
 @container hero (min-width: 700px) {
@@ -333,6 +345,12 @@ footer {
 
   .gallery {
     grid-area: gallery;
+    margin-bottom: 10rem;
+  }
+
+  .grid li:nth-child(1),
+  .grid li:nth-child(3) {
+    transform: translateY(7.5rem);
   }
 
   .card {
