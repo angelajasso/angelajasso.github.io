@@ -52,6 +52,7 @@ header {
 nav {
   display: none;
   gap: 1rem;
+  background-color: var(--color-accent);
 }
 
 nav ul {
@@ -74,7 +75,7 @@ nav a {
 
 nav li:hover,
 nav li:active {
-  background-color: var(--color-accent);
+  background-color: var(--color-secundary);
 }
 
 .btn {
@@ -96,6 +97,13 @@ nav li:active {
 
 .social-toggle {
   display: none;
+}
+
+.social-toggle img {
+  border: 2px solid hsl(75, 6%, 87%);
+  margin: 0 0.5rem;
+  padding: 0.2rem;
+  border-radius: 10px;
 }
 
 .toggle {
@@ -125,6 +133,14 @@ nav li:active {
 
 .menu.show {
   display: flex;
+}
+
+.socials img {
+  border: 2px solid hsl(75, 6%, 87%);
+  margin: 0 0.5rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+  background-color: var(--other-color);
 }
 
 /* main */
