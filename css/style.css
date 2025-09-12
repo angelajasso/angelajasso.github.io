@@ -110,7 +110,7 @@ nav li:active {
   margin-left: 1rem;
   cursor: pointer;
   background: none;
-  border: 1px solid hsl(75, 6%, 87%);
+  border: 1px solid var(--other-color);
   border-radius: 50%;
   padding: 0.4rem;
   font-size: 1rem;
@@ -120,15 +120,15 @@ nav li:active {
 .menu {
   display: none;
   flex-direction: column;
-  background: inherit;
   padding: 1rem;
   border-top: 1px solid #ddd;
+  background-color: var(--other-color);
 }
 
 .menu a {
   margin: 0.5rem 0;
-  color: var(--color-text);
   text-decoration: none;
+  color: white;
 }
 
 .menu.show {

@@ -1,7 +1,7 @@
 const btn = document.getElementById("toggle-theme");
+const btn2 = document.getElementById("toggle");
 
 btn.addEventListener("click", () => {
-  console.log("click!"); // 👈 debería aparecer siempre
   document.body.classList.toggle("dark");
 
   // Cambia el ícono 🌙/☀️
@@ -9,6 +9,17 @@ btn.addEventListener("click", () => {
     btn.textContent = "☀️";
   } else {
     btn.textContent = "🌙";
+  }
+});
+
+btn2.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  // Cambia el ícono 🌙/☀️
+  if (document.body.classList.contains("dark")) {
+    btn2.textContent = "☀️";
+  } else {
+    btn2.textContent = "🌙";
   }
 });
 
