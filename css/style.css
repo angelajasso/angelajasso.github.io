@@ -304,8 +304,14 @@ footer {
   margin: 2.5rem;
 }
 
-.about p {
+.about h2 {
   margin: 1rem 0;
+  font-size: max(1.2em, 1.2em + 1cqi);
+}
+
+.about p {
+  margin: 2rem 4rem;
+  font-size: max(1em, 1em + 1cqi);
 }
 
 @container hero (min-width: 700px) {
