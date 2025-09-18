@@ -375,7 +375,6 @@ footer {
 
 @media (min-width: 800px) {
   header {
-    /* justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
