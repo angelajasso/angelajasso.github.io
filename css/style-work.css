@@ -9,17 +9,29 @@
 
 /* Colores base */
 :root {
-  --color-bg: hsl(75, 6%, 87%);
-  --color-secundary: hsl(214, 23%, 56%);
-  --color-accent: hsl(212, 29%, 36%);
-  --color-text: hsl(219, 37%, 17%);
-  --other-color: hsl(210, 54%, 11%);
+  --color-50: #f5f6f8;
+  --color-100: #eceff3;
+  --color-200: #dde0e8;
+  --color-300: #c8cdd9;
+  --color-400: #b0b6c9;
+  --color-500: #989cb6;
+  --color-600: #8587a6;
+  --color-700: #727390;
+  --color-800: #5e6075;
+  --color-900: #4f5060;
+  --color-950: #2e2e38;
+
+  --color-bg: var(--color-50);
+  --color-secundary: var(--color-200);
+  --color-accent: var(--color-500);
+  --color-text: var(--color-900);
+  --other-color: var(--color-950);
 }
 
 /* modo oscuro */
 .dark {
-  --color-bg: hsl(219, 37%, 17%);
-  --color-text: hsl(75, 6%, 87%);
+  --color-bg: var(--color-900);
+  --color-text: var(--color-50);
 }
 
 body {
@@ -35,7 +47,7 @@ header {
   justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  color: hsl(75, 6%, 87%);
+  color: var(--color-50);
   background-color: var(--other-color);
 }
 
@@ -71,7 +83,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: hsl(75, 6%, 87%);
+  color: var(--color-50);
 }
 
 nav li:hover,
@@ -93,7 +105,7 @@ nav li:active {
   padding: 0.5rem;
   align-items: center;
   background-color: var(--other-color);
-  color: hsl(75, 6%, 87%);
+  color: var(--color-50);
 }
 
 .social-toggle {
@@ -101,7 +113,7 @@ nav li:active {
 }
 
 .social-toggle img {
-  border: 2px solid hsl(75, 6%, 87%);
+  border: 2px solid var(--color-50);
   margin: 0 0.5rem;
   padding: 0.2rem;
   border-radius: 10px;
@@ -122,14 +134,14 @@ nav li:active {
   display: none;
   flex-direction: column;
   padding: 1rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--color-50);
   background-color: var(--other-color);
 }
 
 .menu a {
   margin: 0.5rem 0;
   text-decoration: none;
-  color: white;
+  color: var(--color-50);
 }
 
 .menu.show {
@@ -137,7 +149,7 @@ nav li:active {
 }
 
 .socials img {
-  border: 2px solid hsl(75, 6%, 87%);
+  border: 2px solid var(--color-50);
   margin: 0 0.5rem;
   padding: 0.2rem;
   border-radius: 10px;
@@ -183,7 +195,7 @@ main {
 
 .tags a {
   text-decoration: none;
-  color: hsl(75, 6%, 87%);
+  color: var(--color-50);
   padding: 0.5rem 1rem;
   gap: 0.5rem;
   border: 1px solid var(--color-accent);
