@@ -1,3 +1,5 @@
+@import url("./tokens.css");
+
 /* General styles */
 *,
 *::after,
@@ -5,33 +7,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* Colores base */
-:root {
-  --color-50: #f5f6f8;
-  --color-100: #eceff3;
-  --color-200: #dde0e8;
-  --color-300: #c8cdd9;
-  --color-400: #b0b6c9;
-  --color-500: #989cb6;
-  --color-600: #8587a6;
-  --color-700: #727390;
-  --color-800: #5e6075;
-  --color-900: #4f5060;
-  --color-950: #2e2e38;
-
-  --color-bg: var(--color-50);
-  --color-secundary: var(--color-200);
-  --color-accent: var(--color-500);
-  --color-text: var(--color-900);
-  --other-color: var(--color-950);
-}
-
-/* modo oscuro */
-.dark {
-  --color-bg: var(--color-900);
-  --color-text: var(--color-50);
 }
 
 body {
