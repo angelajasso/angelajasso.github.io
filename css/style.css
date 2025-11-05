@@ -23,7 +23,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: var(--color-50);
-  background-color: var(--other-color);
+  background: var(--gradiente);
 }
 
 .logotipo {
