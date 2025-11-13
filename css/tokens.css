@@ -26,7 +26,9 @@
 }
 
 /* modo oscuro */
-.dark {
-  --color-bg: var(--black);
-  --color-text: var(--cream);
+@media (prefers-color-scheme: dark) {
+  .dark {
+    --color-bg: var(--black);
+    --color-text: var(--cream);
+  }
 }
