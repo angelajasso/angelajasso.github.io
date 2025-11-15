@@ -1,11 +1,11 @@
 :root {
   /* Colores */
 
-  --black: #081012;
-  --blue: #4d8fc3;
-  --cream: #fff3eb;
-  --sand: #e0ab9a;
-  --coral: #ef8a84;
+  --black: #22262f;
+  --blue: #55647d;
+  --cream: #f6f7f9;
+  --sand: #bfb2b2;
+  --coral: #816c65;
 
   --color-bg: var(--cream);
   --color-secundary: var(--blue);
