@@ -1,34 +1,43 @@
 :root {
   /* Colores */
 
-  --black: #22262f;
-  --blue: #55647d;
-  --cream: #f6f7f9;
-  --sand: #bfb2b2;
-  --coral: #816c65;
+  /*Primitive tokens*/
+  --color-primary-50: #f6f7f9;
+  --color-primary-600: #55647d;
+  --color-primary-950: #22262f;
+  --color-neutral-400: #bfb2b2;
+  --color-neutral-600: #816c65;
 
-  --color-bg: var(--cream);
-  --color-secundary: var(--blue);
-  --color-accent: var(--coral);
-  --color-text: var(--black);
-  --gradiente: linear-gradient(135deg, var(--coral), var(--sand));
+  /*Semantic tokens*/
+  --bg: var(--color-primary-50);
+  --text: var(--color-primary-950);
+  --text-muted: var(--color-primary-50);
+  --surface: var(--color-neutral-400);
+  --brand-hover: var(--color-primary-600);
+  --brand: var(--color-neutral-600);
+  --gradient: linear-gradient(
+    135deg,
+    var(--color-neutral-600),
+    var(--color-neutral-400)
+  );
 
   /* Tipografía */
   --font-family-base: "Open Sans", sans-serif;
   --font-size-base: 1rem;
-  --font-size-lg: 1.25rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xlg: 2rem;
 
   /* Espaciado */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 2rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 2.5rem;
 }
 
 /* modo oscuro */
 @media (prefers-color-scheme: dark) {
   .dark {
-    --color-bg: var(--black);
-    --color-text: var(--cream);
+    --bg: var(--color-primary-950);
+    --text: var(--color-primary-50);
   }
 }
