@@ -7,7 +7,7 @@ Este portafolio es un reflejo de mi camino de aprendizaje, donde combino creativ
 
 ## 🚀 Sobre el proyecto
 
-Este sitio web fue creado como mi **portafolio personal**, donde comparto mis proyectos, y una muestra de mis habilidades actuales en diseño y desarrollo web.
+Este sitio web fue creado como mi **portafolio personal**, donde comparto mis proyectos, y una muestra de mis habilidades actuales en desarrollo web.
 
 El portafolio está diseñado con un enfoque en **accesibilidad**, **modo oscuro/claro** y **estructura semántica**, buscando mantener buenas prácticas desde el inicio de mi trayectoria profesional.
 
@@ -54,9 +54,8 @@ Mi objetivo es continuar aprendiendo y construir proyectos más complejos mientr
 
 ## 📬 Contacto
  
-🌐 **Portafolio:** [angelajasso.dev](https://angelajasso.github.io/)  
-💼 **GitHub:** [github.com/angelajasso](https://github.com/angelajasso)  
-📱 **Instagram:** [instagram.com/angelajasso.dev](https://instagram.com/angelajasso.dev)  
+🌐 **Portafolio:** [angelajasso.github.io](https://angelajasso.github.io/)  
+💼 **GitHub:** [github.com/angelajasso](https://github.com/angelajasso)     
 
 ---
 
@@ -68,5 +67,5 @@ Gracias por visitar 💫
 
 ---
 
-© 2025 Angela Jasso.
+© 2026 Angela Jasso.
 
